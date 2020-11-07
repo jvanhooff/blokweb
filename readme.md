@@ -71,7 +71,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** -kies uit zwart, rood óf blauw-
 
-Ik wil graag starten op blauw, en gaandeweg doorgroeien naar blauw. In mijn verleden heb ik wel geprogrammeerd, maar die kennis is erg roestig en waarschijnlijk achterhaald. 
+Ik wil graag starten op blauw, en gaandeweg doorgroeien naar rood. In mijn verleden heb ik wel geprogrammeerd, maar die kennis is erg roestig en waarschijnlijk achterhaald. 
 
 **Je focus:** -kies uit responsive óf surface plane-
 
