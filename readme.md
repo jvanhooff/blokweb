@@ -87,4 +87,4 @@ https://deliveroo.co.uk/
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/plaatj2.png" width="375px" alt="Keuzes voor voedsel">
+<img src="images/plaatje2.png" width="375px" alt="Keuzes voor voedsel">
