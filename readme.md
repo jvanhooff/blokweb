@@ -38,7 +38,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Wat goed ging: 
+
+Het uitzoeken en ordenen van elementen van mijn pagina('s) en het maken van de oefeningen. In het begin had ik wel moeite met de logica, maar dat begrijp ik steeds meer en beter. 
+
+Wat beter kan: 
+
+Het bijbenen van de oefeningen, maar dat kwam mede door opleveringen van andere vakken. Dat hoop ik in de volgende periode wel te verbeteren. 
 
 **Screenshot(s):**
 
