@@ -30,9 +30,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+Wat goed ging: 
 
+Het uitzoeken van een nieuwe website en het inspecteren van de elementen. Ik heb een begin kunnen maken aan mijn html, en wil in de vakantie verder met de CSS. Voor mijn volgende gesprek wil ik in ieder geval de website zo af hebben, dat ik alleen nog maar bezig hoef met de extra aandacht voor de surface plane. 
+
+Wat fout ging: 
+
+Doordat ik bij een ander vak mijn team leid, heb ik weinig tijd gehad om met FED aan de slag te gaan. Ik wil mijn tijd beter verdelen, vandaar dat ik een grote planning heb gemaakt en de leiding aan iemand anders heb overgedragen. Zo heb ik meer tijd om mijn website te maken.  
 
 ## Voortgang 1 (week 3)
 
@@ -68,7 +74,7 @@ Het bijbenen van de oefeningen, maar dat kwam mede door opleveringen van andere 
 
 ## Breakdownschets (week 1)
 
-<img src="images/volledige-pagina.png" width="375px" alt="Input Field">
+<img src="images/newbalance-screenshot.png" width="375px" alt="Input Field">
 <img src="images/volledige-pagina-bewerkt.png" width="375px" alt="Input Field">
 <img src="images/breakdownschets.png" width="375px" alt="Input Field">
 
