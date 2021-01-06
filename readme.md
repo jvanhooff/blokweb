@@ -97,12 +97,12 @@ Ik wil graag meer aandacht geven aan de surface plane!
 
 **Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
 
-https://deliveroo.co.uk/ 
+https://nl.newbalance.eu/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/fullpage-screen.png" width="375px" alt="Homepagina">
+<img src="/images/fullpage-screen.png" width="375px" alt="Homepagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/fullpage-screen2.png" width="375px" alt="Specifieke schoenpagina">
+<img src="/images/fullpage-screen2.png" width="375px" alt="Specifieke schoenpagina">
