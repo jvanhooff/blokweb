@@ -6,26 +6,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. N.v.t
-2. N.v.t
-3. N.v.t
+1. https://nl.newbalance.eu/
+2. https://nl.newbalance.eu/en/pd/574-wabi-sabi/ML574V2-28385-M-EMEA-ML574SOJ.html?dwvar_ML574V2-28385-M-EMEA-ML574SOJ_style=ML574SOJ#style=ML574SOJ&width=D
+3. https://developer.mozilla.org/
+4. https://catswhocode.com/
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Zie stand van zaken van voortgang 3.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+Zie stand van zaken van voortgang 3.
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+## Stand van zaken 
 
+Tijdens dit gesprek heb ik met Deanna het gehad over hoe ik het beste verder kon gaan met mijn HTML en hoe de structuur in elkaar gezet moest worden. Ook heeft ze mij tips gegeven m.b.t css gebruik. Dit was erg fijn omdat het mij meteen verder hielp met mijn website. 
+
+Helaas ben ik vanwege andere vakken nog niet toegekomen aan het afmaken van mijn website, ik heb daarom een planning gemaakt voor mijn oplevering zodat ik bij mijn herkansing een goed werkende website heb die aan de voorwaarden van de oplevering voldoet. Ook heb ik hulp gevraagd aan een collega van mijn werk m.b.t de opmaak van de website. 
 
 
 ## Voortgang 2 (week 5)
@@ -75,8 +79,6 @@ Het bijbenen van de oefeningen, maar dat kwam mede door opleveringen van andere 
 ## Breakdownschets (week 1)
 
 <img src="images/newbalance-screenshot.png" width="375px" alt="Input Field">
-<img src="images/volledige-pagina-bewerkt.png" width="375px" alt="Input Field">
-<img src="images/breakdownschets.png" width="375px" alt="Input Field">
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
@@ -99,8 +101,8 @@ https://deliveroo.co.uk/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/plaatje1.png" width="375px" alt="Input Field">
+<img src="images/fullpage-screen.png" width="375px" alt="Homepagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/plaatje2.png" width="375px" alt="Keuzes voor voedsel">
+<img src="images/fullpage-screen2.png" width="375px" alt="Specifieke schoenpagina">
