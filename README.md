@@ -2,11 +2,9 @@
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+
 
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
 
 
 
@@ -39,11 +37,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/screenshot1.png" width="375px" alt="Homepage van Starbucks">
+  <img src="/images/screenshot1.png" width="375px" alt="Homepage van Starbucks">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/screenshot2.png" width="375px" alt="Een omschrijving van de aangeboden koffie soorten.">
+  <img src="/images/screenshot2.png" width="375px" alt="Een omschrijving van de aangeboden koffie soorten.">
  
 </details>
 
