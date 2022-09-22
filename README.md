@@ -88,13 +88,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/bschets-pagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/bschets-deel1.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bschets-deel2.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -108,17 +108,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik merkte dat ik nog wat moeite had met het benoemen van HTML tags. Ik heb daarom veel moeten Googlen en inspecten. Daarna ben ik begonnen met het tikken van de content en het verzamelen van al het beeldmateriaal. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  |                |                    |              |                  |
+  | Breakdownschets Breakdownschets     Breakdownschets  Breakdownschets
+   + Code           + Code              + Code          + Code
 
 
   ### Verslag van meeting
