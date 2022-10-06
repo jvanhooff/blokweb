@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-76081a8aa65f7606ee6",applicationID:"1344066704"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="canonical" href="https://www.starbucks.nl/nl" />
+<link rel="shortlink" href="https://www.starbucks.nl/nl" />
+<meta name="keywords" content="Limited Edition, Starbucks, Koffie, Thee, Frappuccino, Café, afhalen, meeneembeker" />
+<meta property="og:title" content="Nieuw bij Starbucks" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/starbucks_default_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.starbucks.nl/en" />
+<link rel="alternate" hreflang="nl" href="https://www.starbucks.nl/nl" />
+
+    <title>Homepage (NL) | Starbucks</title>
+    <link rel="stylesheet" media="all" href="/sites/starbucks-nl/files/css/css_AkKd5jZ46ZqNosVSrml4fnuxnX4XnnDEoUzxVszpRcg.css" />
+<link rel="stylesheet" media="all" href="/sites/starbucks-nl/files/css/css_20r3x1rQSCaQQlJZ4tmVcPdHHP01YObFZsu8MR5biK4.css" />
+
+    <script src="/sites/starbucks-nl/files/js/js_dlrMe7MnMmVIWApvhR0Nw7auSdyyNyGlYBn21Y5vRa4.js"></script>
+
+              <script async="async" type="text/javascript" src="//consent.trustarc.com/notice?domain=starbucks.com&c=teconsent&text=true&js=nj&noticeType=bb&country=de&language=nl" crossorigin=""></script>
+                <script type="text/javascript" src="/modules/contrib/seckit/js/seckit.document_write.js"></script>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-no-body" media="all" href="/modules/contrib/seckit/css/seckit.no_body.css" />
+        <!-- stop SecKit protection -->
+        <noscript>
+        <link type="text/css" rel="stylesheet" id="seckit-clickjacking-noscript-tag" media="all" href="/modules/contrib/seckit/css/seckit.noscript_tag.css" />
+        <div id="seckit-noscript-tag">
+          Sorry, you need to enable JavaScript to visit this website.
+        </div>
+        </noscript></head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="app">
+    
+  <div data-component="app-root" class="app-root">
+      <div>
+      <header data-component="n01-navigation" class="n01-navigation" data-component-id="n01_navigation">
+  <nav>
+    <a class="logo-navigation" href="/nl" target="_self" data-element-id="" aria-label="starbucks-logo" >
+<div class="logo" data-component="logo">
+<span class="icon" data-component="icon" data-icon="logo"></span>
+</div>
+    </a>
+
+    <div class="navigation-wrapper">
+      <div class="navigation-items">
+        <ul class="primary-navigation">
+          <li class="primary-navigation-list">
+            <a class="copy-03 bold primary-navigation-item"
+              
+              href="/menu-nl"
+              data-element-id="menu-item-menu-191"
+            >
+              Menu
+            </a>
+          </li>
+          <li class="primary-navigation-list">
+            <a class="copy-03 bold primary-navigation-item"
+              
+              href="/our-coffees-nl"
+              data-element-id="menu-item-our-coffees-486"
+            >
+              Our Coffees
+            </a>
+          </li>
+          <li class="primary-navigation-list">
+            <a class="copy-03 bold primary-navigation-item"
+              
+              href="/delivers-nl"
+              data-element-id="menu-item-bezorging-476"
+            >
+              Bezorging
+            </a>
+          </li>
+          <li class="primary-navigation-list">
+            <a class="copy-03 bold primary-navigation-item"
+              
+              href="/responsibility-nl"
+              data-element-id="menu-item-verantwoordelijkheid-481"
+            >
+              Verantwoordelijkheid
+            </a>
+          </li>
+          <li class="primary-navigation-list">
+            <a class="copy-03 bold primary-navigation-item"
+              
+              href="https://starbucks.easycruit.com/intranet/netherlands/index.html?iso=gb"
+              data-element-id="menu-item-carriere--496"
+            >
+              Carrière 
+            </a>
+          </li>
+          <li class="nav-items-dropdown" hidden="">
+            <div class="nav-items-switcher">
+              <div class="abstract-button collapsible-button js-collapsible-button" aria-label="navigation selection">
+                <span class="copy-03 bold dropdown-navigation-item">More</span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon"
+  
+  type="button"  
+  
+  
+  
+  
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+              </div>
+
+              <ul
+                class=" js-collapsible dropdown-list"
+                hidden=""
+              >
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="secondary-navigation">
+            <li class="language-switcher">
+                <div class="language-switcher-menu-item">
+                  <div class="abstract-button collapsible-button js-collapsible-button" aria-label="Language Selection">
+                    <span class="heading-04 js-current-language current-language"></span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon"
+  
+  type="button"  
+  
+  
+  
+  
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+                  </div>
+
+                  <ul
+                    class="collapsible-list js-collapsible"
+                    hidden=""
+                  >
+                      <li class="languages-option">
+<a data-element-id=""
+  class="abstract-button link-button"
+  href="https://www.starbucks.nl/en/homepage" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    English
+  </span>
+
+
+</a>
+                      </li>
+                      <li class="languages-option">
+<a data-element-id=""
+  class="abstract-button link-button"
+  href="https://www.starbucks.nl/homepage" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Nederlands
+  </span>
+
+
+</a>
+                      </li>
+                  </ul>
+                </div>
+            </li>
+          <li class="find-a-store-button">
+<a data-element-id="menu-item-find-a-store"
+  class="abstract-button link-button"
+  href="/nl/store-locator" target="_self" rel="noopener" 
+   
+  data-theme="dark" 
+  data-icon-alignment="left" 
+  
+  
+  data-component="link-button">
+
+<span class="icon primary-icon" data-component="icon" data-icon="pin-filled"></span>
+
+  <span class="button-label copy-02 semi-bold">
+    Find a store
+  </span>
+
+
+</a>
+          </li>
+        </ul>
+      </div>
+
+<button data-element-id=""
+  class="abstract-button icon-button mobile-navigation js-mobile-menu-button"
+  
+  type="button"  
+  data-theme="light" 
+  
+  
+  
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="hamburger"></span>
+  </div>
+
+
+</button>
+    </div>
+  </nav>
+
+<div
+  class="mobile-menu"
+  data-component="mobile-menu"
+>
+  <div class="navigation-panels">
+    <div
+      class="navigation-panel is-active"
+      data-panel-id="main"
+      data-component="mobile-menu-scroll-target"
+    >
+      <ul class="primary-mobile-navigation">
+          <li>
+
+<a data-element-id=""
+  class="abstract-button link-button navigation-link js-panel-button"
+  href="/menu-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-01">
+    Menu
+  </span>
+
+
+</a>
+          </li>
+          <li>
+
+<a data-element-id=""
+  class="abstract-button link-button navigation-link js-panel-button"
+  href="/our-coffees-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-01">
+    Our Coffees
+  </span>
+
+
+</a>
+          </li>
+          <li>
+
+<a data-element-id=""
+  class="abstract-button link-button navigation-link js-panel-button"
+  href="/delivers-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-01">
+    Bezorging
+  </span>
+
+
+</a>
+          </li>
+          <li>
+
+<a data-element-id=""
+  class="abstract-button link-button navigation-link js-panel-button"
+  href="/responsibility-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-01">
+    Verantwoordelijkheid
+  </span>
+
+
+</a>
+          </li>
+          <li>
+
+<a data-element-id=""
+  class="abstract-button link-button navigation-link js-panel-button"
+  href="https://starbucks.easycruit.com/intranet/netherlands/index.html?iso=gb" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-01">
+    Carrière 
+  </span>
+
+
+</a>
+          </li>
+      </ul>
+
+      <hr />
+
+      <div class="secondary-mobile-navigation">
+        <ul>
+
+
+        </ul>
+
+<a data-element-id="menu-item-find-a-store"
+  class="abstract-button link-button store-locator-link"
+  href="/nl/store-locator" target="_self" rel="noopener" 
+   
+  
+  data-icon-alignment="left" 
+  
+  
+  data-component="link-button">
+
+<span class="icon primary-icon" data-component="icon" data-icon="pin-filled"></span>
+
+  <span class="button-label copy-02 semi-bold">
+    Find a store
+  </span>
+
+
+</a>
+          <li class="mobile-language-switcher">
+              <div class="language-switcher-menu-item">
+                <div class="abstract-button collapsible-button js-collapsible-button" aria-label="Language Selection">
+                  <span class="heading-04 js-current-language current-language"></span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon"
+  
+  type="button"  
+  
+  
+  
+  
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+                </div>
+
+                <ul
+                  class="collapsible-list js-collapsible"
+                  hidden=""
+                >
+                    <li class="languages-option">
+<a data-element-id=""
+  class="abstract-button link-button"
+  href="https://www.starbucks.nl/en/homepage" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    English
+  </span>
+
+
+</a>
+                    </li>
+                    <li class="languages-option">
+<a data-element-id=""
+  class="abstract-button link-button"
+  href="https://www.starbucks.nl/homepage" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Nederlands
+  </span>
+
+
+</a>
+                    </li>
+                </ul>
+              </div>
+          </li>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</header>
+
+
+<div data-drupal-messages-fallback class="hidden"></div>
+
+  </div>
+
+    
+    
+          <div class="content-wrapper">
+        <div class="grid-24">
+          <div class="col-24 col-l-9 sidebar">
+                <section
+  data-component-id="c01_vertical_card_3901" data-component="c01-vertical-card"
+  class="c01-vertical-card"
+  data-scroll-component
+>
+  <div class="wrapper js-wrapper">
+<picture
+  class="image breakout-left"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c01_vertical_card_724x1009/public/2020-08/Starbucks_Logo_0.png.webp?itok=5FteLVsC"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c01_vertical_card_724x1009/public/2020-08/Starbucks_Logo_0.png.webp?itok=5FteLVsC"
+    alt="Starbucks_Logo"
+    class="lazyload fit-cover"
+  />
+</picture>
+
+    <div class="sticky-content js-sticky-content">
+        <p class="copy-label sub-title">
+           
+        </p>
+
+        <h2 class="heading-02 title">
+           
+        </h2>
+
+
+        <ul class="call-to-actions">
+            <li>
+<a data-element-id="field_cta_0"
+  class="abstract-button secondary-button js-cta"
+  href="/nl/delivers-nl" target="_self" rel="noopener" 
+   
+  data-theme="light-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Bestel nu</span>
+
+</a>
+            </li>
+            <li>
+<a data-element-id="field_cta_1"
+  class="abstract-button secondary-button js-cta"
+  href="https://www.starbucks.nl/nl/store-locator" target="_self" rel="noopener" 
+   
+  data-theme="light-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Vind jouw dichtstbijzijnde locatie </span>
+
+</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+
+
+          </div>
+          <main class="col-24 col-l-15 main">
+            <div class="main-blocks">
+                      <section
+  class="two-third-wrapper c02-horizontal-card"
+  data-component-id="c02_horizontal_card_3866" data-component="c02-horizontal-card"
+  data-scroll-component
+>
+<div class="background theme-naturalGray  breakout-right"></div><picture
+  class="image breakout-right"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c02_horizontal_card_1335x534/public/2022-09/3083_AUT22_NL-EN_Website_Hero_1335x534_PSL_v01.jpg.webp?itok=Y3xFN0eV"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c02_horizontal_card_1335x534/public/2022-09/3083_AUT22_NL-EN_Website_Hero_1335x534_PSL_v01.jpg.webp?itok=Y3xFN0eV"
+    alt="Hello Pumpkin Spice Season"
+    class="lazyload fit-cover"
+  />
+</picture>
+
+  <div
+    class="content"
+    data-alignment="left"
+  >
+    <div class="grid-15">
+      <div class="col-l-push-1 col-l-13">
+
+          <h2 class="heading-02 title">
+            Pumpkin Spice is terug!
+          </h2>
+
+          <p class="description rich-text copy-02">
+            De blaadjes beginnen te vallen en de zon neemt langzaam af, wat alleen maar kan betekenen: de herfst gaat beginnen!
+<br /><br />
+Dit seizoen is onze favoriet, de Pumpkin Spice Latte, terug met een nieuw vriendje: de Pumpkin Cream Cold Brew 🍂
+<br />
+Limited edition en exclusief bij Starbucks.
+<br /><br />
+Bestel nu direct aan je deur via Uber Eats of Thuisbezorgd.
+          </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section
+  class="two-third-wrapper c10-two-cols-text-image"
+  data-component-id="c10_two_cols_text_image_3876" data-component="c10-two-col-text-image"
+>
+<div class="background theme-naturalGray  breakout-right"></div>
+  <div class="content">
+      <div class="grid-15">
+        <h2 class="col-l-13 col-l-push-1 heading-06 bold main-title">
+          Jouw favorieten bezorgd aan huis!
+        </h2>
+      </div>
+
+      <div class="item grid-15 ">
+          <div class="col-m-7 col-l-push-1">
+<picture
+  class="image item-image"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c10_2_col_text_560x467/public/2022-01/44_Daryl%20Cauchi_2440.jpg.webp?itok=uXKicLUg"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c10_2_col_text_560x467/public/2022-01/44_Daryl%20Cauchi_2440.jpg.webp?itok=uXKicLUg"
+    alt="Delivery Promo Home"
+    class="lazyload fit-cover"
+  />
+</picture>
+          </div>
+
+        <div class="col-m-7 col-l-6 col-l-push-1 col-m-push-1">
+          <div class=" rich-text copy-02">
+            <h3 class="title heading-04 bold">
+              Starbucks® Delivers
+            </h3>
+
+            <p>Mis dit voorjaar nooit meer een drankje met Starbucks® Bezorgd.</p>
+
+<p>Geniet van al je favorieten aan en knus op je bank terwijl je je favoriete serie bingewatcht.</p>
+
+<p>We bezorgen tot aan je deur, zodat je kunt genieten van je Iced Latte of Caramel Frappuccino in de comfort van je eigen huis.</p>
+          </div>
+
+<a data-element-id="field_cta_0"
+  class="abstract-button secondary-button call-to-action js-cta"
+  href="/nl/delivers-nl" target="_self" rel="noopener" 
+   
+  data-theme="primary-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Bestel nu</span>
+
+</a>
+        </div>
+
+      </div>
+  </div>
+</section>
+
+
+    <section
+  class="two-third-wrapper c06-cards-grid"
+  data-component-id="c06_cards_grid_3896" data-component="c06-cards-grid"
+  
+>
+<div class="background theme-naturalGray  breakout-right"></div>
+  <div class="content">
+    <div class="grid-15">
+
+
+      <div class="articles col-l-14 col-l-push-1">
+          <article class="article">
+<picture
+  class="image"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2022-01/Starbucks%20Bugibba%20%2856%29.jpg.webp?itok=ENtzVDet"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2022-01/Starbucks%20Bugibba%20%2856%29.jpg.webp?itok=ENtzVDet"
+    alt="Bugibba Store Entrance Shot"
+    class="lazyload fit-cover"
+  />
+</picture>
+
+            <div class="article-detail">
+                <h3 class="heading-04 article-title">
+                  Starbucks Verhalen
+                </h3>
+
+                <p class="copy-02 article-description">
+                  Blijf op de hoogte van onze laatste Starbucks verhalen en nieuws.
+                </p>
+
+<a data-element-id="field_cta_0"
+  class="abstract-button secondary-button js-cta"
+  href="https://stories.starbucks.com/emea" target="_self" rel="noopener" 
+   
+  data-theme="primary-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Ontdek meer</span>
+
+</a>
+
+            </div>
+          </article>
+          <article class="article">
+<picture
+  class="image"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2020-08/About-Us-Card-Image-C06-RESIZED.jpg.webp?itok=j0z481Ul"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2020-08/About-Us-Card-Image-C06-RESIZED.jpg.webp?itok=j0z481Ul"
+    alt="About Us"
+    class="lazyload fit-cover"
+  />
+</picture>
+
+            <div class="article-detail">
+                <h3 class="heading-04 article-title">
+                  Over ons
+                </h3>
+
+                <p class="copy-02 article-description">
+                  Ontdek meer over ons bedrijf en geschiedenis.
+                </p>
+
+<a data-element-id="field_cta_1"
+  class="abstract-button secondary-button js-cta"
+  href="/nl/about-us" target="_self" rel="noopener" 
+   
+  data-theme="primary-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Ontdek meer</span>
+
+</a>
+
+            </div>
+          </article>
+          <article class="article">
+<picture
+  class="image"
+  data-component="image"
+  
+>
+    <source
+      class="js-small-image"
+      media="(max-width: 768px)"
+      data-srcset="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2021-01/Starbucks-Delivers-Hero-C01-RESIZED.jpg.webp?itok=uU6X6cQi"
+    >
+
+  <img
+    data-src="https://www.starbucks.nl/sites/starbucks-nl/files/styles/c06_cards_grid_560x321/public/2021-01/Starbucks-Delivers-Hero-C01-RESIZED.jpg.webp?itok=uU6X6cQi"
+    alt="StarbucksDelivers"
+    class="lazyload fit-cover"
+  />
+</picture>
+
+            <div class="article-detail">
+                <h3 class="heading-04 article-title">
+                  Starbucks® Bezorgd
+                </h3>
+
+                <p class="copy-02 article-description">
+                  Genieten van je favoriete Starbucks® drankjes vanuit het comfort van je huis is dichterbij dan je zou denken. Het is de koffie die je kent en waar je van houdt, in je favoriete mok.
+
+Kijk of bezorging bij jou in de buurt mogelijk is. Start je bestelling om je Starbucks® favorieten te laten bezorgen via Uber Eats en Thuisbezorgd.
+                </p>
+
+<a data-element-id="field_cta_2"
+  class="abstract-button secondary-button js-cta"
+  href="/nl/delivers-nl" target="_self" rel="noopener" 
+   
+  data-theme="primary-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Bestel nu</span>
+
+</a>
+
+            </div>
+          </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+            </div>
+
+                                <section
+  class="two-third-wrapper n02-footer"
+  data-component="n02-footer"
+  data-component-id="n02_footer"
+>
+<div class="background theme-trueWhite  breakout-right"></div>
+  <div class="content">
+    <div class="grid-15">
+      <div  class="col-l-push-1 col-l-14" >
+        <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <div class="abstract-button collapsible-button js-collapsible-button">
+                <span class="heading-03">
+                  Over ons
+                </span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon footer-dropdown"
+  
+  type="button"  
+  
+  
+  
+  aria-label="caret-down-icon"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+              </div>
+
+              <ul
+                class="collapsible-list js-collapsible"
+                hidden=""
+              >
+                  <li>
+<a data-element-id="menu-item-over-ons-286"
+  class="abstract-button link-button"
+  href="/about-us" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Over ons
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-onze-koffies-276"
+  class="abstract-button link-button"
+  href="/our-coffees-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Onze koffies
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-starbucks-verhalen-nieuws-281"
+  class="abstract-button link-button"
+  href="https://stories.starbucks.com/emea/" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Starbucks Verhalen & Nieuws
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-starbucksr-ready-to-drink-291"
+  class="abstract-button link-button"
+  href="https://starbuckschilled.com/nl/" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Starbucks® Ready to Drink
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-zuivelalternatieven-491"
+  class="abstract-button link-button"
+  href="/dairy-alternative-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Zuivelalternatieven
+  </span>
+
+
+</a>
+                  </li>
+              </ul>
+            </li>
+            <li class="footer-menu-item">
+              <div class="abstract-button collapsible-button js-collapsible-button">
+                <span class="heading-03">
+                  Contact
+                </span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon footer-dropdown"
+  
+  type="button"  
+  
+  
+  
+  aria-label="caret-down-icon"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+              </div>
+
+              <ul
+                class="collapsible-list js-collapsible"
+                hidden=""
+              >
+                  <li>
+<a data-element-id="menu-item-werken-bij-starbucks-306"
+  class="abstract-button link-button"
+  href="https://starbucks.easycruit.com/intranet/netherlands/index.html?iso=gb" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Werken bij Starbucks
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-contact-311"
+  class="abstract-button link-button"
+  href="/contact-us-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Contact
+  </span>
+
+
+</a>
+                  </li>
+              </ul>
+            </li>
+            <li class="footer-menu-item">
+              <div class="abstract-button collapsible-button js-collapsible-button">
+                <span class="heading-03">
+                  Sociale Impact
+                </span>
+
+<button data-element-id=""
+  class="abstract-button icon-button toggle-icon js-toggle-icon footer-dropdown"
+  
+  type="button"  
+  
+  
+  
+  aria-label="caret-down-icon"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="caret-down"></span>
+  </div>
+
+
+</button>
+              </div>
+
+              <ul
+                class="collapsible-list js-collapsible"
+                hidden=""
+              >
+                  <li>
+<a data-element-id="menu-item-verantwoordelijkheid-336"
+  class="abstract-button link-button"
+  href="/responsibility-nl" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Verantwoordelijkheid
+  </span>
+
+
+</a>
+                  </li>
+                  <li>
+<a data-element-id="menu-item-covid-19-456"
+  class="abstract-button link-button"
+  href="https://stories.starbucks.com/emea/stories/2020/starbucks-is-ready-to-reintroduce-reusables-across-emea/" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    COVID-19
+  </span>
+
+
+</a>
+                  </li>
+              </ul>
+            </li>
+        </ul>
+
+        <hr class="ui-divider" />
+
+        <ul class="social-list">
+            <li class="social-list-item">
+<a data-element-id="social-media-facebook"
+  class="abstract-button icon-button"
+  href="https://www.facebook.com/starbucksnederland" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  aria-label="social-media-facebook"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="social-media-facebook"></span>
+  </div>
+
+
+</a>
+            </li>
+            <li class="social-list-item">
+<a data-element-id="social-media-instagram"
+  class="abstract-button icon-button"
+  href="https://www.instagram.com/starbucksnederland" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  aria-label="social-media-instagram"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="social-media-instagram"></span>
+  </div>
+
+
+</a>
+            </li>
+            <li class="social-list-item">
+<a data-element-id="social-media-tiktok"
+  class="abstract-button icon-button"
+  href="https://www.tiktok.com/@starbucksnederland" target="_blank" rel="noopener" 
+   
+  
+  
+  
+  aria-label="social-media-tiktok"
+  data-component="icon-button">
+  <div class="icon-wrapper">
+<span class="icon button-icon" data-component="icon" data-icon="social-media-tiktok"></span>
+  </div>
+
+
+</a>
+            </li>
+        </ul>
+
+        <ul class="secondary-footer-menu">
+            <li class="secondary-footer-menu-item">
+<a data-element-id="menu-item-privacy-policy-141"
+  class="abstract-button link-button"
+  href="/privacy-statement" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Privacy Policy
+  </span>
+
+
+</a>
+            </li>
+            <li class="secondary-footer-menu-item">
+<a data-element-id="menu-item-terms-of-use-146"
+  class="abstract-button link-button"
+  href="/terms-of-use" target="_self" rel="noopener" 
+   
+  
+  
+  
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Terms of Use
+  </span>
+
+
+</a>
+            </li>
+            <li class="secondary-footer-menu-item">
+<button data-element-id="menu-item-cookie-policy-451"
+  class="abstract-button link-button"
+  
+  type="button"  
+  
+  
+  onClick="truste.eu &amp;&amp; truste.eu.clickListener()" 
+  
+  data-component="link-button">
+
+
+  <span class="button-label copy-02 semi-bold">
+    Cookie Policy
+  </span>
+
+
+</button>
+            </li>
+        </ul>
+
+        <p class="copyright-text copy-02">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+                                  </main>
+      </div>
+      </div>
+    
+    
+    <div
+  class="tooltip"
+  data-component="tooltip"
+  data-position="top"
+  hidden
+>
+  <div class="content">
+    <div class="scroll-content">
+      <p class="copy-02 js-title-element"></p>
+    </div>
+<button data-element-id=""
+  class="abstract-button secondary-button js-close-button"
+  
+  type="button"  
+  data-theme="primary-outline" 
+  
+  
+  
+  data-component="secondary-button"
+>
+
+  <span class="copy-02 semi-bold button-label">Got it</span>
+
+</button>
+  </div>
+</div>
+
+    <section data-component="alert" class="alert" data-theme="info" data-type="banner">
+  <div class="js-alert-component">
+  </div>
+</section>
+
+
+
+  <!-- trustarc -->
+  <div id="consent_blackbar"></div>
+  <!-- end of trustarc -->
+
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"nl\/","currentPath":"node\/116","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"nl"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"paragraphs\/drupal.paragraphs.unpublished,starbucks_datalayer\/datalayer,starbucks_default_theme\/global-styling,starbucks_default_theme\/ie_check,system\/base","theme":"starbucks_default_theme","theme_token":null},"ajaxTrustedUrl":[],"starbucks_datalayer":{"components":{"n02_footer":{"menu-item-over-ons-266":{"label":"Over ons","href":"\/"},"menu-item-over-ons-286":{"label":"Over ons","href":"\/about-us"},"menu-item-onze-koffies-276":{"label":"Onze koffies","href":"\/our-coffees-nl"},"menu-item-starbucks-verhalen-nieuws-281":{"label":"Starbucks Verhalen \u0026 Nieuws","href":"https:\/\/stories.starbucks.com\/emea\/"},"menu-item-starbucksr-ready-to-drink-291":{"label":"Starbucks\u00ae Ready to Drink","href":"https:\/\/starbuckschilled.com\/nl\/"},"menu-item-zuivelalternatieven-491":{"label":"Zuivelalternatieven","href":"\/dairy-alternative-nl"},"menu-item-contact-301":{"label":"Contact","href":"\/"},"menu-item-werken-bij-starbucks-306":{"label":"Werken bij Starbucks","href":"https:\/\/starbucks.easycruit.com\/intranet\/netherlands\/index.html?iso=gb"},"menu-item-contact-311":{"label":"Contact","href":"\/contact-us-nl"},"menu-item-sociale-impact-331":{"label":"Sociale Impact","href":"\/"},"menu-item-verantwoordelijkheid-336":{"label":"Verantwoordelijkheid","href":"\/responsibility-nl"},"menu-item-covid-19-456":{"label":"COVID-19","href":"https:\/\/stories.starbucks.com\/emea\/stories\/2020\/starbucks-is-ready-to-reintroduce-reusables-across-emea\/"},"menu-item-privacy-policy-141":{"label":"Privacy Policy","href":"\/privacy-statement"},"menu-item-terms-of-use-146":{"label":"Terms of Use","href":"\/terms-of-use"},"menu-item-cookie-policy-451":{"label":"Cookie Policy","href":null},"social-media-facebook":{"label":"facebook","href":"https:\/\/www.facebook.com\/starbucksnederland"},"social-media-instagram":{"label":"instagram","href":"https:\/\/www.instagram.com\/starbucksnederland"},"social-media-tiktok":{"label":"tiktok","href":"https:\/\/www.tiktok.com\/@starbucksnederland"}},"c06_cards_grid_3896":{"field_cta_0":{"label":"Ontdek meer","href":"https:\/\/stories.starbucks.com\/emea","target":"_self","elementId":"field_cta_0"},"field_cta_1":{"label":"Ontdek meer","href":"\/nl\/about-us","target":"_self","elementId":"field_cta_1"},"field_cta_2":{"label":"Bestel nu","href":"\/nl\/delivers-nl","target":"_self","elementId":"field_cta_2"}},"c10_two_cols_text_image_3876":{"field_cta_0":{"label":"Bestel nu","href":"\/nl\/delivers-nl","target":"_self","elementId":"field_cta_0"}},"c01_vertical_card_3901":{"field_cta_0":{"label":"Bestel nu","href":"\/nl\/delivers-nl","target":"_self","elementId":"field_cta_0"},"field_cta_1":{"label":"Vind jouw dichtstbijzijnde locatie ","href":"https:\/\/www.starbucks.nl\/nl\/store-locator","target":"_self","elementId":"field_cta_1"}}},"pageMetadata":{"user_status":false,"page_language":"nl","page_path":"\/homepage","page_title":"Homepage (NL)","page_market":"NL","page_environment":"prod","page_type":"basic_page","page_region":"frontpage"},"tracking_id":"GTM-K78327C"},"starbucks_components":{"collector_url":"https:\/\/prod.accdab.net\/cdn\/cs\/YTEcPK4ahoqD1E0_xlHtU5NwP-Q.js"},"user":{"sid":"7fbceb104ed4c142acb7eca3773efce8","uid":0,"permissionsHash":"3867ca44141632ebce65408f2e7066e3037c4135b8a7f7dcf033f7c71559e19c"}}</script>
+<script src="/sites/starbucks-nl/files/js/js_OqB4JEEXAL_AlYDz75FKkmx4Nsa_yCX-R1VlYs8vq1A.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-76081a8aa65f7606ee6","applicationID":"1344066704","transactionName":"Z1FQZEEDXUdQAhVZXV4bc1NHC1xaHhEAV1dvV1NTWwc=","queueTime":0,"applicationTime":49,"atts":"SxZTEgkZTkk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
