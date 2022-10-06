@@ -148,11 +148,11 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jesse     | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | CSS Bespreken | en dit             | en ik dit    | en dan ik dat    |
-  | Javascript    | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jesse          | Emilio              | Giorgio        | Nathan           |
+  | ---            | ---               | ---              | ---              |
+  | CSS Bespreken  | CSS + Breakpoints | CSS Bespreken    | Geen Reactie     |
+  | Javascript     | dit als er tijd is|                  | dit wil ik zeker |
+  | ...            | ...               | ...              | ...              |
 
 
   ### Verslag van meeting
