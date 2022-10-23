@@ -1,30 +1,27 @@
+@font-face
+
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-button, summary {
+button,
+summary {
 	cursor: pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -33,49 +30,117 @@ button, summary {
 /* jouw code */
 
 body {
-  color:var(--color-text);
-  background-color:var(--color-background);
+	color: var(--color-text);
+	background-color: var(--color-background);
+	margin: 0;
 }
 
-header nav ul li { 
+header nav ul li {
 	visibility: hidden;
 }
 
-header ul:nth-of-type(1) { 
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+header ul:nth-of-type(1) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main section:first-of-type {
+	position: relative;
+}
+
+main section:first-of-type div {
+	position: absolute;
+	left: 3em;
+	bottom: 1em;
+}
+
+main img:nth-last-of-type(1) {
+	display: flex;
+	align-items: center;
+
+}
+
+/* Links + Buttons, https://alvarotrigo.com/blog/css-round-button/*/
+
+
+main section:nth-of-type(1) button {
+	border-radius: 1em;
+    border: 1px solid white;
+	color: white;
+    padding: 5px 10px;
+    background: transparent;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+main button {
+	border-radius: 1em;
+    border: 1px solid #44996A;
+    padding: 5px 10px;
+    background: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+main a {
+	border-radius: 10em;
+    border: 1px solid #44996A;
+	font-family: "SoDoSans", sans-serif;
+	font-weight: 500;
+	color: #44996A;
+    padding: 5px 10px;
+    background: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+/* ----------------------------------------------------------- */
+
+
+section h2 {
+	font-family: 'SoDoSans', sans-serif;
+}
+
+section h3 {
+	font-family: 'SoDoSans', sans-serif;
+	font-weight: bold;
+}
+
+section p {
+	font-family: 'Sodo sans', sans-serif
 }
 
 
-main img:nth-last-of-type(1) { 
-display: flex;
-align-items: center;
+
+
+footer:nth-of-type(1) li {
+	font-size: 2em;
+	list-style: none;
+	font-family: 'Sedo sans', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
-main button { 
-border-radius: 1em;
-border-color: black;
+
+
+footer section:nth-of-type(2) ul li {
+	font-family:'Sedo sans', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	position: relative;
+	list-style: none;
+
 }
 
 
-/* 
-  
-  /* JOUW CODE HIER - stap 2 */
-  transform:translatex(-100%);
-  
-  /* JOUW CODE HIER - stap 4 */
-  transition:transform .3s;
+
+
+
+/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizonate lijn over het scherm. */
+hr {
+	border: 1em;
+	border-top: 0.1em solid #95a5a6;
+	height: 1em;
 }
-
-/* als menu open is */
-header.toonMenu {
-  /* JOUW CODE HIER - stap 4 */
-  transform:translatex(0);
-} */
-
-
 
 

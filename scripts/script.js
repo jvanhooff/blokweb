@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-var openButton = document.querySelector("header > ul > button"); 
+var openButton = document.querySelector("header  a"); 
 
 openButton.addEventListener("click", openMenu)
 
@@ -14,7 +14,7 @@ deNav.classList.Add("toonMenu");
 
 
 // stap 1 - zoek sluiten button op
-var sluitButton = document.querySelector("nav button");
+var sluitButton = document.querySelector("header  button");
 
 // stap 2 - laat die button luisteren naar kliks
 sluitButton.addEventListener("click", sluitMenu);
@@ -24,3 +24,5 @@ function sluitMenu() {
   var deNav = document.querySelector("nav");
   deNav.classList.remove("toonMenu");
 }
+
+
