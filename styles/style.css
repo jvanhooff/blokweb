@@ -1,4 +1,3 @@
-
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -6,11 +5,11 @@
 *::after,
 *::before {
 	box-sizing: border-box;
-	margin:0;
+	margin: 0;
 }
 
-*{
-	padding:0;
+* {
+	padding: 0;
 }
 
 button,
@@ -25,9 +24,17 @@ summary {
 	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
-
-
 }
+
+/* Dark mode */
+
+/* @media (prefers-color-scheme:dark) {
+	:root {
+		--color-background: #121212;
+		--color-text: white;
+	}
+} */
+
 
 /****************/
 /* JOUW STYLING */
@@ -35,10 +42,58 @@ summary {
 
 /* jouw code */
 
+
+
+/* Alle STATES van buttons, knoppen e.d */
+
+/* a:visited {
+	color: red;
+} */
+
+/* a:active {
+color: red;
+}
+
+a:focus {
+color: red;
+} */
+
+
+
+
+
+
+
+@font-face {
+	src: url('../font/SoDoSans-Regular.ttf');
+	font-family: sodosans;
+}
+
+@font-face {
+	src: url('../font/SoDoSans-SemiBold.ttf');
+	font-family: sodosans-bold;
+}
+
+@font-face {
+	src: url('../font/SoDoSans-Light.ttf');
+	font-family: sodosans-light;
+}
+
 body {
 	color: var(--color-text);
 	background-color: var(--color-background);
 	margin: 0;
+}
+
+
+
+body header ul li img:nth-last-of-type(1) {
+	width: 3em;
+	height: 2em;
+}
+
+body h1 {
+	display: none;
 }
 
 header nav ul li {
@@ -55,21 +110,36 @@ header ul:nth-of-type(1) {
 	padding-top: 1.5em;
 	padding-left: 0.5em;
 	margin-bottom: -1em;
-	
+
 }
 
-main img {
-    width: 100%;
+
+
+main section:nth-of-type(1) img {
+	width: 100%;
+	height: 50%;
 }
 
 main section:first-of-type {
-		position: relative;
-	}
+	position: relative;
+}
+
+/* Knoppen in Header image */
 
 main section:first-of-type div {
 	position: absolute;
 	left: 3em;
-	bottom: 1em;
+	bottom: 2em;
+}
+
+main section div button {
+	/* box-shadow: 0.1em 0.1em 0.1em 0.1em;
+	color: black; */
+	/* box-shadow: 0.2em 0.2em 0.2em black; */
+	margin-top: 1em;
+	padding: 1em;
+	margin-left: -1em;
+	font-family: 'sodosans';	
 }
 
 main img:nth-last-of-type(1) {
@@ -79,99 +149,213 @@ main img:nth-last-of-type(1) {
 
 /* Links + Buttons, https://alvarotrigo.com/blog/css-round-button/*/
 
-
 main section:nth-of-type(1) button {
 	border-radius: 1em;
-    border: 1px solid white;
+	border: 1px solid white;
 	color: white;
-    padding: 5px 10px;
-    background: transparent;
-    font-size: 1em;
-    cursor: pointer;
+	padding: 5px 10px;
+	background: transparent;
+	font-size: 1em;
+	cursor: pointer;
 }
 
 main button {
 	border-radius: 1em;
-    border: 1px solid #44996A;
-    padding: 5px 10px;
-    background: white;
-    font-size: 1em;
-    cursor: pointer;
+	border: 1px solid #44996A;
+	padding: 5px 10px;
+	background: white;
+	font-size: 1em;
+	cursor: pointer;
 }
 
 main a {
 	border-radius: 10em;
-    border: 1px solid #44996A;
-	font-family: "SoDoSans", sans-serif;
+	border: 1px solid #44996A;
+	font-family: "sodosans-bold";
 	font-weight: 500;
 	color: #44996A;
-    padding: 5px 10px;
-    background: white;
-    font-size: 1em;
-    cursor: pointer;
+	padding: 5px 10px;
+	background: white;
+	font-size: 0.9em;
+	cursor: pointer;
+	text-decoration: none;
+	
 }
+
+
 /* ----------------------------------------------------------- */
+
+
+
+/* ONDERSTAANDE SAMENVOEGEN IN 1 SELECTOR! */
 section:nth-of-type(2) {
-    display: flex;
-    flex-direction: column;
-    margin: 1EM;
+	display: flex;
+	flex-direction: column;
+	margin: 1EM;
 }
 
 section:nth-of-type(3) {
-    display: flex;
-    flex-direction: column;
-    margin: 1EM;
+	display: flex;
+	flex-direction: column;
+	margin: 1EM;
 }
 
-section:nth-of-type(3) a {width: fit-content;}
-section:nth-of-type(4) a {width: fit-content;}
-section:nth-of-type(5) a {width: fit-content;}
-section:nth-of-type(6) a {width: fit-content;}
+section:nth-of-type(3) a {
+	width: fit-content;
+}
+
+section:nth-of-type(4) a {
+	width: fit-content;
+}
+
+section:nth-of-type(5) a {
+	width: fit-content;
+}
+
+section:nth-of-type(6) a {
+	width: fit-content;
+}
+
+/* ONDERSTAANDE SAMENVOEGEN IN 1 SELECTOR! */
+
+section:nth-of-type(4),
+section:nth-of-type(5),
+section:nth-of-type(6) {
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
+	box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(4) h3 {
+	padding-bottom: -3em;
+	margin-left: 1em;
+	padding-left: -4em;
+	margin-bottom: -0.5em;
+}
 
 
+section:nth-of-type(4) p {
+	padding-bottom: 3em;
+	margin-left: 1.3em;
+	
+}
+
+section:nth-of-type(4) a {
+	margin-top: -3em;
+	margin-left: 1.3em;
+	margin-bottom: 1.5em;
+	font-family: sodosans-bold;
+	text-decoration: none;
+	
+}
+
+section:nth-of-type(5) h3 {
+	padding-bottom: -3em;
+	margin-left: 1em;
+	padding-left: -4em;
+	margin-bottom: -0.5em;
+}
 
 
-section:nth-of-type(4), section:nth-of-type(5), section:nth-of-type(6) {
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    box-shadow: 0 0 0.5em ;
+section:nth-of-type(5) p {
+	padding-bottom: 3em;
+	margin-left: 1.3em;
+	
+}
+
+section:nth-of-type(5) a {
+	margin-top: -3em;
+	margin-left: 1.3em;
+	margin-bottom: 1.5em;
+	font-family: sodosans-bold;
+	text-decoration: none;
+	
+}
+
+section:nth-of-type(6) h3 {
+	padding-bottom: -3em;
+	margin-left: 1em;
+	padding-left: -4em;
+	margin-bottom: -0.5em;
+}
+
+
+section:nth-of-type(6) p {
+	padding-bottom: 3em;
+	margin-left: 1.3em;
+	
+}
+
+section:nth-of-type(6) a {
+	margin-top: -3em;
+	margin-left: 1.3em;
+	margin-bottom: 1.5em;
+	font-family: sodosans-bold;
+	text-decoration: none;
+	
 }
 
 section h2 {
-	font-family: 'SoDoSans', sans-serif;
+	font-family: 'sodosans', sans-serif;
 }
 
 section h3 {
-	font-family: 'SoDoSans', sans-serif;
+	font-family: 'sodosans', sans-serif;
 	font-weight: bold;
 }
 
-section p {
-	font-family: 'Sodo sans', sans-serif
+section p {	
+	font-family: 'sodosans-light';
 }
 
 
 
-footer:nth-of-type(1) ul li {
-	
-	gap: 4em;
+/* Footer Menu */
 
+footer ul:nth-of-type(1) li img { 
+width: 1em;
+height: 1em;
 }
 
-
+footer section:nth-of-type(1) ul li img {
+width: 1em;
+height: 1em;
+}
 
 footer:nth-of-type(1) li {
 	font-size: 2em;
 	list-style: none;
-	font-family: 'Sedo sans', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0.75em;
+}
+
+footer ul:nth-of-type(1) li { 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	}
+
+footer li:nth-of-type(1) {
+	font-size: 2em;
+	list-style: none;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0.75em;
+}
+
+footer ul:nth-of-type(3) li {
+	font-size: 1em;
+	list-style: none;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
 	margin: 0.75em;
 }
 
 
 
-footer section:nth-of-type(2) ul li {
-	font-family:'Sedo sans', Tahoma, Geneva, Verdana, sans-serif;
+/* Footer Policy tekst e.d */
+
+footer section:nth-of-type(2)  li {
+	font-family: 'sodosans';
 	font-size: 1em;
 	font-weight: 500;
 	position: relative;
@@ -180,17 +364,14 @@ footer section:nth-of-type(2) ul li {
 
 
 
-
-
-
-
-
-
-/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizonate lijn over het scherm. */
+/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizontale lijn over het scherm. */
 hr {
 	border: 1em;
 	border-top: 0.1em solid #95a5a6;
 	height: 1em;
 }
 
-
+/* Ik heb het ook middels een div uitgevogeld, mag dit ook? Aangezien het een visuele aanpassing betreft? */
+.horizontal-rule {
+	border-top: 0.1em solid #95a5a6;
+  }

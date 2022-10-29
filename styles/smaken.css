@@ -41,6 +41,10 @@ body {
 	margin: 0;
 }
 
+body h1 {
+	display: none;
+}
+
 header nav ul li {
 	visibility: hidden;
 }
