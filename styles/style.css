@@ -62,8 +62,6 @@ color: red;
 
 
 
-
-
 @font-face {
 	src: url('../font/SoDoSans-Regular.ttf');
 	font-family: sodosans;
@@ -188,46 +186,52 @@ main a {
 
 
 /* ONDERSTAANDE SAMENVOEGEN IN 1 SELECTOR! */
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
 	margin: 1EM;
 }
 
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
 	display: flex;
 	flex-direction: column;
 	margin: 1EM;
 }
 
-section:nth-of-type(3) a {
+main section:nth-of-type(3) a {
 	width: fit-content;
 }
 
-section:nth-of-type(4) a {
+main section:nth-of-type(4) a {
 	width: fit-content;
 }
 
-section:nth-of-type(5) a {
+main section:nth-of-type(5) a {
 	width: fit-content;
 }
 
-section:nth-of-type(6) a {
+main section:nth-of-type(6) a {
 	width: fit-content;
 }
 
 /* ONDERSTAANDE SAMENVOEGEN IN 1 SELECTOR! */
 
-section:nth-of-type(4),
-section:nth-of-type(5),
-section:nth-of-type(6) {
+main section:nth-of-type(4),
+main section:nth-of-type(5),
+main section:nth-of-type(6) {
 	display: flex;
 	flex-direction: column;
 	margin: 1em;
 	box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.1);
 }
 
-section:nth-of-type(4) h3 {
+
+main section:nth-of-type(6) {  
+margin-bottom: 4em;
+
+}
+
+main section:nth-of-type(4) h3 {
 	padding-bottom: -3em;
 	margin-left: 1em;
 	padding-left: -4em;
@@ -235,13 +239,14 @@ section:nth-of-type(4) h3 {
 }
 
 
-section:nth-of-type(4) p {
+main section:nth-of-type(4) p {
 	padding-bottom: 3em;
 	margin-left: 1.3em;
+	font-size: 0.9em;
 	
 }
 
-section:nth-of-type(4) a {
+main section:nth-of-type(4) a {
 	margin-top: -3em;
 	margin-left: 1.3em;
 	margin-bottom: 1.5em;
@@ -250,7 +255,7 @@ section:nth-of-type(4) a {
 	
 }
 
-section:nth-of-type(5) h3 {
+main section:nth-of-type(5) h3 {
 	padding-bottom: -3em;
 	margin-left: 1em;
 	padding-left: -4em;
@@ -258,13 +263,14 @@ section:nth-of-type(5) h3 {
 }
 
 
-section:nth-of-type(5) p {
+main section:nth-of-type(5) p {
 	padding-bottom: 3em;
 	margin-left: 1.3em;
+	font-size: 0.9em;
 	
 }
 
-section:nth-of-type(5) a {
+main section:nth-of-type(5) a {
 	margin-top: -3em;
 	margin-left: 1.3em;
 	margin-bottom: 1.5em;
@@ -273,7 +279,7 @@ section:nth-of-type(5) a {
 	
 }
 
-section:nth-of-type(6) h3 {
+main section:nth-of-type(6) h3 {
 	padding-bottom: -3em;
 	margin-left: 1em;
 	padding-left: -4em;
@@ -281,95 +287,229 @@ section:nth-of-type(6) h3 {
 }
 
 
-section:nth-of-type(6) p {
+main section:nth-of-type(6) p {
 	padding-bottom: 3em;
 	margin-left: 1.3em;
+	font-size: 0.9em;
 	
 }
 
-section:nth-of-type(6) a {
+main section:nth-of-type(6) a {
 	margin-top: -3em;
 	margin-left: 1.3em;
 	margin-bottom: 1.5em;
-	font-family: sodosans-bold;
+	font-family: 'sodosans-bold';
 	text-decoration: none;
-	
 }
 
-section h2 {
+main section h2 {
 	font-family: 'sodosans', sans-serif;
 }
 
-section h3 {
+main section h3 {
 	font-family: 'sodosans', sans-serif;
 	font-weight: bold;
 }
 
-section p {	
+main section p {	
 	font-family: 'sodosans-light';
 }
 
 
 
-/* Footer Menu */
 
-footer ul:nth-of-type(1) li img { 
-width: 1em;
-height: 1em;
+
+/* Hier begint het eerste footer menu */
+
+footer section:nth-of-type(1) {
+	position:relative; /* zodat de button binnen de setcion blijft */
 }
 
-footer section:nth-of-type(1) ul li img {
-width: 1em;
-height: 1em;
+footer section:nth-of-type(1) span {
+	position:absolute; /* op een plek binnen de section */
+	top:0;
+	right:0em;
+	width: 2em;
+	height: 2em;  
 }
 
-footer:nth-of-type(1) li {
-	font-size: 2em;
-	list-style: none;
-	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0.75em;
+footer section:nth-of-type(1) h2 {
+	margin:0;
+	font-family: 'sodosans';
+	font-size: 1.3em;
+	margin-left: 0.5em;
 }
 
-footer ul:nth-of-type(1) li { 
-	display: flex; 
-	justify-content: space-between;
-	align-items: center;
-	}
-
-footer li:nth-of-type(1) {
-	font-size: 2em;
-	list-style: none;
-	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0.75em;
+footer section:nth-of-type(1) ul {
+	margin:0.5em;
+	padding:0;
+	list-style:none;
+	
+	max-height:0; /* ingeklapt geen hoogte */
+	overflow:hidden; /* wat uitsteekt is verborgen */
+	
+	transition:.4s; /* .3s is een mooie tijd - langer vinden mensen te traag */
 }
 
-footer ul:nth-of-type(3) li {
-	font-size: 1em;
-	list-style: none;
-	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0.75em;
+footer section:nth-of-type(1) ul li a {
+	font-family: 'sodosans-bold';
+	font-size: 0.9em;
+	margin-left: 0.3em;
+	text-decoration: none;
 }
+
+
+footer section:nth-of-type(1) ul.open {
+	max-height:15em; /* mikken dat dit de goede hoogte is voor jouw menu */
+	line-height: 3em;
+} 
+
+
+/* Hier begint het tweede footer menu */
+
+footer section:nth-of-type(2) {
+	position:relative; /* zodat de button binnen de setcion blijft */
+}
+
+footer section:nth-of-type(2) span {
+	position:absolute; /* op een plek binnen de section */
+	top:0;
+	right:0;
+}
+
+
+footer section:nth-of-type(2) span img {
+	position:absolute; /* op een plek binnen de section */
+	top:0;
+	right:0em;
+	width: 2em;
+	height: 2em;  
+}
+
+footer section:nth-of-type(2) h2 {
+	margin:0;
+	font-size:1.3em;
+	margin-left: 0.5em;
+	font-family: 'sodosans';
+}
+
+footer section:nth-of-type(2) ul {
+	margin:0.5em;
+	padding:0;
+	list-style:none;
+	
+	max-height:0; /* ingeklapt geen hoogte */
+	overflow:hidden; /* wat uitsteekt is verborgen */
+	
+	transition:.4s; /* .3s is een mooie tijd - langer vinden mensen te traag */
+}
+
+footer section:nth-of-type(2) ul li a {
+	font-family: 'sodosans-bold';
+	font-size: 0.9em;
+	margin-left: 0.4em;
+	text-decoration: none;
+}
+
+
+footer section:nth-of-type(2) ul.open {
+	max-height:6em; /* mikken dat dit de goede hoogte is voor jouw menu */
+	line-height: 3em;
+} 
+
+
+
+
+footer section:nth-of-type(3) {
+	position:relative; /* zodat de button binnen de setcion blijft */
+}
+
+footer section:nth-of-type(3) span {
+	position:absolute; /* op een plek binnen de section */
+	top:0;
+	right:0;
+}
+
+footer section:nth-of-type(3) span img {
+	position:absolute; /* op een plek binnen de section */
+	top:0;
+	right:0em;
+	width: 2em;
+	height: 2em;  
+}
+
+footer section:nth-of-type(3) h2 {
+	margin:0;
+	font-size:1.3em;
+	margin-left: 0.5em;
+	font-family: 'sodosans';
+}
+
+footer section:nth-of-type(3) ul {
+	
+	padding:0;
+	list-style:none;
+	
+	max-height:0; /* ingeklapt geen hoogte */
+	overflow:hidden; /* wat uitsteekt is verborgen */
+	
+	transition:.4s; /* .3s is een mooie tijd - langer vinden mensen te traag */
+}
+
+footer section:nth-of-type(3) ul li a {
+	font-family: 'sodosans-bold';
+	font-size: 0.9em;
+	margin-left: 0.7em;
+	text-decoration: none;
+}
+
+footer section:nth-of-type(3) ul.open {
+	max-height:6em; /* mikken dat dit de goede hoogte is voor jouw menu */
+	line-height: 3em;
+} 
 
 
 
 /* Footer Policy tekst e.d */
 
-footer section:nth-of-type(2)  li {
+
+/* footer section:nth-of-type(4) li  { 
+display: flex;
+flex-direction: row;
+width: 2em;
+height: 2em;
+gap: 2.5em;
+} */
+
+footer section:nth-of-type(4) li img { 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+width: 2em;
+height: 2em;
+
+
+}
+
+/* Footer tekst */
+
+footer section:nth-of-type(5) ul li {
 	font-family: 'sodosans';
 	font-size: 1em;
-	font-weight: 500;
-	position: relative;
+	margin-left: 1.5em;
+	line-height: 2em;
 	list-style: none;
+	
 }
 
 
-
-/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizontale lijn over het scherm. */
+/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizontale lijn over het scherm.
 hr {
 	border: 1em;
 	border-top: 0.1em solid #95a5a6;
 	height: 1em;
-}
+} */
 
 /* Ik heb het ook middels een div uitgevogeld, mag dit ook? Aangezien het een visuele aanpassing betreft? */
 .horizontal-rule {
