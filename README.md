@@ -184,21 +184,40 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+   In dit onderdeel heb ik getest hoe navigeerbaar mijn website is met enkel het toetsenbord 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+   Het tabben gaat goed, ik kan alleen het menu niet in. Na het vragen aan Sanne blijkt dat dat mogelijk is om menu's automatisch uit elkaar te laten schuiven. Dat blijkt echter een behoorlijke klus, dus dat laat ik voor nu even achterwege. 
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Voor dit onderdeel heb ik het schock apparaat omgedaan en heb ik met de elastiekjes getest!
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Ik heb het apparaat met de electische schokjes uitgeprobeerd. De website was nog goed te gebruiken met het apparaat op de laagste stand. Toen Sanne echter het apparaat op de hoogste stand zette was het praktisch onmogelijk om kleinere buttons aan te klikken. Ook het lezen van tekst werd lastiger omdat ik meer energie kwijt was aan het aanspannen van spieren dan aan het letten op de tekst.  
 
+  De elastiekjes waren veel minder intensief. Het voelde meer aan als een verdikte vinger die ik net had gestoten dan dat ik echt gehinderd werd. Ik kon alles aanklikken, al werd het wel minder goed klikbaar naarmate de buttons steeds kleiner werden. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Met deze brillen heb ik getest hoe mijn website zichtbaar is met verschillende brillen op. (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+Blur/Glare: Met deze bril kan ik de titels op de landings niet lezen. Ook de zwarte tekst op de webpagina kan ik niet lezen. Idem dito met de zwarte titels. De plaatjes kan ik gelukkig wel zin. De buttons kan ik ook niet lezen. De buttons onderaan de footer kan ik wel lezen gelukkig. 
+
+Peripheral Field Loss: Met deze bril is het lastig om te zien wat de afbeeldingen betekenen. Je ziet slecht wat voor vorm er wordt weergegeven. Dit kan opgelost worden met een figcaption waarmee de afbeelding wordt uitgelegd. 
+
+Combined Loss Diabetic Eye Disease: Door de grote vlokken op het scherm is het lastig om te zien wat er zich op het scherm afspeelt. Het zorgt ervoor dat je afgeleid raakt of je hoofd moet bewegen om het vanuit een bepaalde hoek wel te kunnen zien. Ik denk dat ik weinig kan doen om deze ervaring beter te maken.
+
+Stip in het midden bril: De grote stip in het midden maakt het heel lastig om de content te bekijken. Content wat zich wat meer aan de zijkant afspeelt is redelijk goed te doen, maar focussen op tekst in het midden is erg lastig. 
+
+Low Contrast: Het lage contrast zorgt ervoor dat ik de tekst en afbeeldigen slecht kan zien/lezen. 
+
+Central field Loss : Ik kan hiermee slecht lezen wat voor tekst er wordt weergegeven. De afbeeldingen worden ook vaag, maar wanneer je schuin kijkt kan je het wel beter zien. Ik kan een optie bieden in mijn website om het beter toegankelijk te maken. 
+
+Hemifield Loss: 
+
+
+
+
+
 
 </details>
 

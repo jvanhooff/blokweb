@@ -482,6 +482,11 @@ height: 2em;
 gap: 2.5em;
 } */
 
+footer section:nth-of-type(4) { 
+border-top: solid 1px black;	
+}
+
+
 footer section:nth-of-type(4) li img { 
 display: flex;
 flex-direction: column;
@@ -505,12 +510,7 @@ footer section:nth-of-type(5) ul li {
 }
 
 
-/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizontale lijn over het scherm.
-hr {
-	border: 1em;
-	border-top: 0.1em solid #95a5a6;
-	height: 1em;
-} */
+
 
 /* Ik heb het ook middels een div uitgevogeld, mag dit ook? Aangezien het een visuele aanpassing betreft? */
 .horizontal-rule {

@@ -423,6 +423,28 @@ main section p {
 
 
 
+main section:nth-of-type(16), 
+main section:nth-of-type(17),
+main section:nth-of-type(18),
+main section:nth-of-type(19) {
+border-bottom: solid 1px black;
+padding-left: 5em;
+position: relative;
+}
+
+main section:nth-of-type(16) img,
+main section:nth-of-type(17) img,
+main section:nth-of-type(18) img,
+main section:nth-of-type(19) img {
+position: absolute;
+top: 0;
+left: 0;
+width: 4em;
+height: auto;	
+}
+
+
+
 
 
 /* Hier begint het eerste footer menu */
@@ -434,7 +456,7 @@ footer section:nth-of-type(1) {
 footer section:nth-of-type(1) span {
 	position:absolute; /* op een plek binnen de section */
 	top:0;
-	right:1em;
+	right:0em;
 	width: 2em;
 	height: 2em;  
 }
@@ -443,7 +465,7 @@ footer section:nth-of-type(1) h2 {
 	margin:0;
 	font-family: 'sodosans';
 	font-size: 1.3em;
-	margin-left: 0.8em;
+	margin-left: 0.5em;
 	margin-bottom: 2em;
 }
 
@@ -496,7 +518,7 @@ footer section:nth-of-type(2) span img {
 footer section:nth-of-type(2) h2 {
 	margin:0;
 	font-size:1.3em;
-	margin-right: 1.7em;
+	margin-left: 0.5em;
 	font-family: 'sodosans';
 	margin-bottom: 2em;
 }
@@ -515,7 +537,7 @@ footer section:nth-of-type(2) ul {
 footer section:nth-of-type(2) ul li a {
 	font-family: 'sodosans-bold';
 	font-size: 0.9em;
-	margin-left: 1em;
+	margin-left: 0.4em;
 	text-decoration: none;
 }
 
@@ -549,7 +571,7 @@ footer section:nth-of-type(3) span img {
 footer section:nth-of-type(3) h2 {
 	margin:0;
 	font-size:1.3em;
-	
+	margin-left: 0.5em;
 	font-family: 'sodosans';
 }
 
@@ -575,12 +597,6 @@ footer section:nth-of-type(3) ul.open {
 	max-height:6em; /* mikken dat dit de goede hoogte is voor jouw menu */
 	line-height: 3em;
 } 
-
-
-
-
-
-
 
 
 footer section:nth-of-type(4) li img { 
