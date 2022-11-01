@@ -1,0 +1,56 @@
+
+
+
+
+
+/* Footer Menu */
+/* 
+footer ul:nth-of-type(1) li img { 
+width: 1em;
+height: 1em;
+}
+
+footer section:nth-of-type(1) ul li img {
+width: 1em;
+height: 1em;
+}
+
+footer:nth-of-type(1) li {
+	font-size: 2em;
+	list-style: none;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0.75em;
+}
+
+footer ul:nth-of-type(1) li { 
+	display: flex; 
+	justify-content: space-between;
+	align-items: center;
+	}
+
+footer li:nth-of-type(1) {
+	font-size: 2em;
+	list-style: none;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0.75em;
+}
+
+footer ul:nth-of-type(3) li {
+	font-size: 1em;
+	list-style: none;
+	font-family: 'sodosans', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0.75em;
+} */
+
+
+/* Footer Policy tekst e.d */
+
+
+/* footer section:nth-of-type(4) li  { 
+display: flex;
+flex-direction: row;
+width: 2em;
+height: 2em;
+gap: 2.5em;
+} */
+

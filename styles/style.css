@@ -108,7 +108,6 @@ header ul:nth-of-type(1) {
 	padding-top: 1.5em;
 	padding-left: 0.5em;
 	margin-bottom: -1em;
-
 }
 
 
@@ -338,6 +337,7 @@ footer section:nth-of-type(1) h2 {
 	font-family: 'sodosans';
 	font-size: 1.3em;
 	margin-left: 0.5em;
+	margin-bottom: 2em;
 }
 
 footer section:nth-of-type(1) ul {
@@ -391,6 +391,7 @@ footer section:nth-of-type(2) h2 {
 	font-size:1.3em;
 	margin-left: 0.5em;
 	font-family: 'sodosans';
+	margin-bottom: 2em;
 }
 
 footer section:nth-of-type(2) ul {
