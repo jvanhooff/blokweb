@@ -1,3 +1,15 @@
+// HET HEADERMENU
+
+var menuButton = document.querySelector("header > ul li:nth-of-type(2) a");
+
+console.log(menuButton);
+
+menuButton.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  document.body.classList.toggle("open");
+}
+
 
 // // stap 1: zoek de menu-button op en sla die op in een variabele
 // var openButton = document.querySelector("header > button");

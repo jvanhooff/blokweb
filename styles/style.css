@@ -85,29 +85,101 @@ body {
 
 
 
-body header ul li img:nth-last-of-type(1) {
-	width: 3em;
-	height: 2em;
-}
+
 
 body h1 {
 	display: none;
 }
 
-header nav ul li {
-	visibility: hidden;
-}
-
-header ul:nth-of-type(1) {
+header > ul:nth-of-type(1) {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	list-style: none;
 	justify-content: space-between;
-	margin: 0.1em;
-	padding-top: 1.5em;
-	padding-left: 0.5em;
-	margin-bottom: -1em;
+	margin: 0em;
+	padding: 0.5em;
+	/* margin-bottom: -1em; */
+
+	position: relative;
+	z-index: 200;
+}
+
+body header ul li img:nth-last-of-type(1) {
+	width: 3em;
+	height: 2em;
+}
+
+header > ul li:nth-of-type(2) a {
+	width:2em;
+	height:2em;
+	display:block;
+	/* background-color: red; */
+	border-radius: 50%;
+
+	position: relative;
+	display:grid;
+	place-items: center;
+}
+
+header > ul li:nth-of-type(2) a span {
+	display:block;
+	position: absolute;
+	width:1.25em;
+	height:.125em;
+	background-color: black;
+
+
+	transition: 0.3s;
+}
+
+header > ul li:nth-of-type(2) a span:nth-of-type(1) {
+	transform: translateY(-.4em);
+}
+
+header > ul li:nth-of-type(2) a span:nth-of-type(3) {
+	transform: translateY(.4em);
+}
+
+body.open header > ul li:nth-of-type(2) a span:nth-of-type(1) {
+	transform: rotate(45deg) scaleX(1.125);
+}
+
+body.open header > ul li:nth-of-type(2) a span:nth-of-type(2) {
+	transform: scaleX(0);
+}
+
+body.open header > ul li:nth-of-type(2) a span:nth-of-type(3) {
+	transform: rotate(-45deg) scaleX(1.125);
+}
+
+header nav ul {
+border-bottom: solid 1px black;
+
+}
+
+header nav ul li a {
+font-size: 1.5em;	
+font-family: 'sodosans';
+text-decoration: none;
+
+}
+
+
+/* het schuifmenu */
+header nav {
+	position:fixed;
+	inset:0;
+	background-color: white;
+
+	z-index:100;
+
+	transform: translateX(-100%);
+
+	transition: .5s;
+}
+
+body.open header nav {
+	transform: translateX(0%);
 }
 
 
@@ -120,6 +192,12 @@ main section:nth-of-type(1) img {
 main section:first-of-type {
 	position: relative;
 }
+
+
+
+
+
+
 
 /* Knoppen in Header image */
 
@@ -483,18 +561,25 @@ gap: 2.5em;
 } */
 
 footer section:nth-of-type(4) { 
-border-top: solid 1px black;	
+border-top: solid 1px black;
 }
 
 
-footer section:nth-of-type(4) li img { 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
+footer section:nth-of-type(4) ul { 
+	display: flex;
+	gap: 0.75em;
+	list-style: none;
+	padding: 1.25em;
+	margin: 0;
+	
+	}
+	
+
+footer section:nth-of-type(4) ul li { 
+position: relative;
 width: 2em;
 height: 2em;
-
+cursor: pointer;
 
 }
 
@@ -508,11 +593,3 @@ footer section:nth-of-type(5) ul li {
 	list-style: none;
 	
 }
-
-
-
-
-/* Ik heb het ook middels een div uitgevogeld, mag dit ook? Aangezien het een visuele aanpassing betreft? */
-.horizontal-rule {
-	border-top: 0.1em solid #95a5a6;
-  }

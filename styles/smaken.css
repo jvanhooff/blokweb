@@ -35,6 +35,53 @@ summary {
 
 /* jouw code */
 
+/* Bron: Emilio heeft mij geholpen */
+
+main section:nth-of-type(1) div button:hover {
+    
+    background-image: url("../images/logo.svg");
+    background-size: 300% 100%;
+    animation-name: shimmer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes shimmer {
+    
+    0% {
+    background-position: left center;
+    }
+    
+    100% {
+    background-position: right center;
+    }
+}
+
+
+main section:nth-of-type(1) div button:focus {
+    
+    background-image: url("../images/logo.svg");
+    background-size: 300% 100%;
+    animation-name: shimmer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes shimmer {
+    
+    0% {
+    background-position: left center;
+    }
+    
+    100% {
+    background-position: right center;
+    }
+}
+
 body {
 	color: var(--color-text);
 	background-color: var(--color-background);
@@ -213,8 +260,18 @@ summary {
 		--color-background: #121212;
 		--color-text: white;
 	}
-} */
+    img {
+		filter: brightness(0.85);
+	}
+}  */
 
+/* Surface plane punt 1; het reducen van motion wanneer de gebruiker dat aangeeft.  */
+
+@media (prefers-reduced-motion: reduce) {
+	main section:nth-of-type(1) div button:hover {
+	  animation: none;
+	}
+  }
 
 /****************/
 /* JOUW STYLING */
@@ -228,16 +285,23 @@ summary {
 
 /* a:visited {
 	color: red;
-} */
+}  */
 
-/* a:active {
-color: red;
+a:active {
+color: purple;
 }
 
 a:focus {
-color: red;
-} */
+color: black;
+} 
 
+a:hover{
+color: black;	
+}
+
+/* a:visited{
+color: purple;	
+} */
 
 
 
@@ -372,6 +436,8 @@ main a {
 
 /* ----------------------------------------------------------- */
 
+
+/* Start Menu */
 
 
 /* ONDERSTAANDE SAMENVOEGEN IN 1 SELECTOR! */
@@ -599,40 +665,29 @@ footer section:nth-of-type(3) ul.open {
 } 
 
 
-footer section:nth-of-type(4) li img { 
+
+
+
+footer video { 
+	width: 100%;
+	height: 100%;
+}
+
+footer section:nth-of-type(5) li img { 
+position: relative;
 display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
+
 width: 2em;
 height: 2em;
 }
 
-/* footer div:nth-of-type(1) {
-	width: 25em;
-	height: 15em;
-	background-image: url(../images/delivery.jpeg);
-	animation-name: starbucks-logo;
-	animation-duration: 4s;
-  }
-  
-  @keyframes starbucks-logo {
-	from {background-image: url(../images/koffie1.jpeg);}
-	to {background-image: url(../images/koffie2.png);}
-	
-  } */
 
-  footer div:nth-of-type(2) {
-	width: 20em;
-	height: 20em;
-	border-radius: 2em;
-	background-image: url(../images/giphy.gif);
-	background-repeat: no-repeat;
-  }
+
+ 
 
 /* Footer tekst */
 
-footer section:nth-of-type(5) ul li {
+footer section:nth-of-type(6) ul li {
 	font-family: 'sodosans';
 	font-size: 1em;
 	margin-left: 1.5em;
@@ -642,14 +697,4 @@ footer section:nth-of-type(5) ul li {
 }
 
 
-/* Via https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr, ik begrijp hoe het werkt, een horizontale lijn over het scherm.
-hr {
-	border: 1em;
-	border-top: 0.1em solid #95a5a6;
-	height: 1em;
-} */
 
-/* Ik heb het ook middels een div uitgevogeld, mag dit ook? Aangezien het een visuele aanpassing betreft? */
-.horizontal-rule {
-	border-top: 0.1em solid #95a5a6;
-  }
