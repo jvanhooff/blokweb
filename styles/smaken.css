@@ -165,11 +165,11 @@ main section:nth-of-type(2) button {
 text-decoration: none;
 width: fit-content;
 border-radius: 10em;
-border: 1px solid #44996A;
+border: 1px solid var(--color-starbucks-brand-groen);
 font-family: "SoDoSans", sans-serif;
 font-weight: 500;
 margin-top: 1em;
-color: #44996A;
+color: var(--color-starbucks-brand-groen);
  padding: 5px 10px;
  background: white;
  font-size: 1em;
@@ -257,7 +257,7 @@ main a {
     border: 1px solid #44996A;
 	font-family: "SoDoSans", sans-serif;
 	font-weight: 500;
-	color: #44996A;
+	color: var(--color-starbucks-brand-groen);
     padding: 5px 10px;
     background: white;
     font-size: 1em;
@@ -324,6 +324,7 @@ summary {
 	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
+	--color-starbucks-brand-groen: #44996A;
 }
 
 /* Dark mode */
@@ -414,19 +415,6 @@ body h1 {
 
 
 
-header ul:nth-of-type(1) {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	list-style: none;
-	justify-content: space-between;
-	margin: 0.1em;
-	padding-top: 1.5em;
-	padding-left: 0.5em;
-	margin-bottom: -1em;
-
-}
-
 
 
 main section:nth-of-type(1) img {
@@ -493,10 +481,10 @@ main button {
 
 main a {
 	border-radius: 10em;
-	border: 1px solid #44996A;
+	border: 1px solid var(--color-starbucks-brand-groen);
 	font-family: "sodosans-bold";
 	font-weight: 500;
-	color: #44996A;
+	color: var(--color-starbucks-brand-groen);
 	padding: 5px 10px;
 	background: white;
 	font-size: 0.9em;
@@ -595,7 +583,7 @@ footer section:nth-of-type(1) {
 footer section:nth-of-type(1) span {
 	position:absolute; /* op een plek binnen de section */
 	top:0;
-	right:0em;
+	right:1em;
 	width: 2em;
 	height: 2em;  
 }
@@ -657,7 +645,7 @@ footer section:nth-of-type(2) span img {
 footer section:nth-of-type(2) h2 {
 	margin:0;
 	font-size:1.3em;
-	margin-left: 0.5em;
+	margin-left: -0.1em;
 	font-family: 'sodosans';
 	margin-bottom: 2em;
 }
@@ -710,7 +698,7 @@ footer section:nth-of-type(3) span img {
 footer section:nth-of-type(3) h2 {
 	margin:0;
 	font-size:1.3em;
-	margin-left: 0.5em;
+	margin-left: -0.1em;
 	font-family: 'sodosans';
 }
 
@@ -746,28 +734,36 @@ footer video {
 	height: 100%;
 }
 
-footer section:nth-of-type(5) li img { 
-position: relative;
-display: flex;
 
-width: 2em;
-height: 2em;
-}
-
-
-
- 
-
-/* Footer tekst */
-
-footer section:nth-of-type(6) ul li {
-	font-family: 'sodosans';
-	font-size: 1em;
-	margin-left: 1.5em;
-	line-height: 2em;
-	list-style: none;
+footer section:nth-of-type(5) { 
+	border-top: solid 1px black;
+	}
 	
-}
-
-
-
+	
+	footer section:nth-of-type(5) ul { 
+		display: flex;
+		gap: 1em;
+		list-style: none;
+		padding: 1.25em;
+		margin: 0;
+		
+		}
+		
+	
+	footer section:nth-of-type(5) ul li { 
+	position: relative;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+	}
+	
+	/* Footer tekst */
+	
+	footer section:nth-of-type(6) ul li {
+		font-family: 'sodosans';
+		font-size: 1em;
+		margin-left: 1.5em;
+		line-height: 2em;
+		list-style: none;
+		
+	}

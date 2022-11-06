@@ -24,6 +24,7 @@ summary {
 	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
+    --color-starbucks-brand-groen: #44996A; 
 }
 
 /* Dark mode */
@@ -113,7 +114,6 @@ header > ul li:nth-of-type(2) a {
 	width:2em;
 	height:2em;
 	display:block;
-	/* background-color: red; */
 	border-radius: 50%;
 
 	position: relative;
@@ -215,9 +215,6 @@ main section:first-of-type div {
 }
 
 main section div button {
-	/* box-shadow: 0.1em 0.1em 0.1em 0.1em;
-	color: black; */
-	/* box-shadow: 0.2em 0.2em 0.2em black; */
 	margin-top: 1em;
 	padding: 1em;
 	margin-left: -1em;
@@ -279,7 +276,7 @@ main a {
 	border: 1px solid #44996A;
 	font-family: "sodosans-bold";
 	font-weight: 500;
-	color: #44996A;
+	color: var(--color-starbucks-brand-groen);
 	padding: 5px 10px;
 	background: white;
 	font-size: 0.9em;
@@ -579,17 +576,6 @@ footer section:nth-of-type(3) ul.open {
 } 
 
 
-
-/* Footer Policy tekst e.d */
-
-
-/* footer section:nth-of-type(4) li  { 
-display: flex;
-flex-direction: row;
-width: 2em;
-height: 2em;
-gap: 2.5em;
-} */
 
 footer section:nth-of-type(4) { 
 border-top: solid 1px black;

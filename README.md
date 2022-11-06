@@ -268,7 +268,7 @@ Hemifield Loss:
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Tijdens dit vak heb ik goed geleerd hoe belangrijk het is om hulp te vragen, gerichter te zoeken en om verbanden te leggen.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
