@@ -116,7 +116,7 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jesse          | Giorgio             | Emilio      |  Henriks        |
   |                |                    |              |                  |
   | Breakdownschets Breakdownschets     Breakdownschets  Breakdownschets
    + Code           + Code              + Code          + Code
@@ -125,10 +125,9 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ - We willen allemaal meer aan de slag met het uitwerken van semantische HMTL. We maken nu allemaal nog veel gebruik van verkeerde tags, waardoor we teveel of juist te weinig code schrijven. 
+ - Ik moet mij meer bezig houden met uitwerken van de juiste flexbox methodiek. Nu ben ik nog veel met margins en paddings aan het experimenteren, terwij dit veel beter met Grid of Flexbox kan. 
+ - Ook moet ik nu aan de slag met CSS. Ik denk dat ik hier veel hulp bij nodig ga hebben.
 
 </details>
 
@@ -148,7 +147,7 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jesse          | Emilio              | Giorgio        | Nathan           |
+  | Jesse          | Emilio              | Giorgio      Nathan           |
   | ---            | ---               | ---              | ---              |
   | CSS Bespreken  | CSS + Breakpoints | CSS Bespreken    | Geen Reactie     |
   | Javascript     | dit als er tijd is|                  | dit wil ik zeker |
@@ -158,10 +157,7 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- Ik merk dat ik het maken van het menu erg lastig vind. Dit komt niet per se door de javascript, maar meer door het implementeren van de juiste CSS. Ook wanneer ik de oefeningen volg merk ik dat ik het nog steeds niet goed snap. Ik wil daarom in de aankomende lessen wat meer hulp vragen om het menu te fixen. Ook wil ik meer aan de slag met de styling en hoe ik dat beter en efficienter kan toepassen. 
 
 </details>
 
@@ -237,9 +233,9 @@ Hemifield Loss:
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | Jesse      	| 	Henriks	            | Emilio	   | Giorgio         |
+  | ---            | ---                | ---          | ---              |		CSS + JS + Menu		CSS + HTML		CSS + HTML
+  | CSS + Menu  |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -247,10 +243,7 @@ Hemifield Loss:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Nu het einde in zicht komt wil ik beter gaan letten op hoe erg de website overeenkomt met de echte website. Ik merk dat ik her en der toch nog wat kleine schoonheidsfoutjes zie zitten. Ook heb ik nog veel moeite met de menu's op de pagina's. Het loopt qua animatie nog niet lekker of de list items en bijbehorende content wordt niet goed weergegeven. Ook wil ik mijn CSS opschonen en de selectors, values e.d weghalen die er niet thuis horen. 
 
 </details>
 
@@ -268,13 +261,13 @@ Hemifield Loss:
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Tijdens dit vak heb ik goed geleerd hoe belangrijk het is om hulp te vragen, gerichter te zoeken en om verbanden te leggen.
+  Tijdens dit vak heb ik goed geleerd hoe belangrijk het is om hulp te vragen, gerichter te zoeken en om verbanden te leggen. Aan het begin van dit vak had ik heel erg de twijfel of ik het dit keer wel zou halen, maar na het begrijpen van de stof ging ik al vrij snel als een trein. De voortgangs gesprekken zorgde ervoor dat ik veel met andere klasgenoten kon sparren en leren. Ik was blij dat ik steeds meer leerde en verbanden kon leggen, waardoor ik ideetjes vrij snel kon uitbouwen naar echte functies, dat gaf een kick. Ik ben echt ontzettend tevreden met het eindresultaat, het lijkt enorm op de echte website. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Zoals ik al aangaf hierboven had ik veel moeite met het starten van dit vak. De eerdere pogingen liepen meestal uit op niks, dit kwam voornamelijk omdat ik de stof simpelweg niet begreep of niet op tijd oefeningen afkreeg. Dit ging bij deze poging een stuk beter. Dit kwam ook op omdat ik deze poging vaker en eerder om hulp vroeg. Ik heb wel een aantal keer gehad dat ik uren aan het klieren was met 1 stukje code. Dat kwam voornamelijk omdat ik het zelfe wilde uitvogelen. Ik zag dan echter wel vrij snel in dat ik hulp nodig had, deze riep ik dan ook in bij de eerstvolgende les. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
