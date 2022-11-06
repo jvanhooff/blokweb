@@ -153,16 +153,23 @@ body.open header > ul li:nth-of-type(2) a span:nth-of-type(3) {
 }
 
 header nav ul {
+padding-top: 3em;
+padding-left: 1.5em;	
 border-bottom: solid 1px black;
+line-height: 4em;
+list-style: none;
 
 }
 
 header nav ul li a {
-font-size: 1.5em;	
+font-size: 1.25em;	
 font-family: 'sodosans';
 text-decoration: none;
 
 }
+
+
+
 
 
 /* het schuifmenu */
@@ -233,6 +240,30 @@ main section:nth-of-type(1) button {
 	font-size: 1em;
 	cursor: pointer;
 }
+
+main section:nth-of-type(3) a {
+	background-image: url("../images/giphy.gif");
+    background-size: 300% 100%;
+    animation-name: shimmer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	color: white;
+    
+}
+
+@keyframes shimmer {
+    
+    0% {
+    background-position: left center;
+    }
+    
+    100% {
+    background-position: right center;
+    }
+}
+
+
 
 main button {
 	border-radius: 1em;
@@ -580,7 +611,6 @@ position: relative;
 width: 2em;
 height: 2em;
 cursor: pointer;
-
 }
 
 /* Footer tekst */

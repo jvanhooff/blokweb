@@ -14,19 +14,20 @@
 </head>
 
 <body>
+	<h1> Welkom bij Starbucks </h1>
 	<header>
-		<h1> Welkom op de Starbucks Smaken pagina </h1>
 		<ul>
-			<img src="images/logo.svg" alt="" width="40em" height="40em">
-			<a href="#"><img src="images/hbmenu.svg" alt="" width="35em" height="35em"> </a>
+			<li> <a href="#"><img src="images/logo.svg" alt="Afbeelding van het Starbucks Logo"> </a> </li>
+			<li> <a href="#"><span></span><span></span><span></span></a> </li>
 		</ul>
-		<nav>
+		<nav> 
 			<ul>
 				<li><a href="#">Menu</a></li>
 				<li><a href="#">Our Coffees</a></li>
 				<li><a href="#">Bezorging</a></li>
 				<li><a href="#">Verantwoordelijkheid</a></li>
 				<li><a href="#">Carrière</a></li>
+				<li><a href="#">Find a store</a><img src="images/pin.svg" alt="Afbeelding van een locatie pin"></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,8 +37,8 @@
 			<img src="images/hero1.png" alt="Grotere afbeelding van Starbucks dranken">
 			<div>
 				<h2> Onze Koffie </h2>
-				<button href="#"> Bestel nu </button>
-				<button href="#"> Vind jouw dichtsbijzijnde locatie</button>
+				<button aria-label="Knop met Bestel nu titel" href="#"> Bestel nu </button>
+				<button aria-label="Knop met vind dichtsbijzijnde locatie titel" href="#"> Vind jouw dichtsbijzijnde locatie</button>
 			</div>
 		</section>
 
@@ -48,10 +49,10 @@
 				alleen overtroffen door onze liefde om het te delen.
 
 				<h3> Wilt u de tekst aanpassen voor deze pagina? Middels onderstaande knoppen is dat mogelijk! </h3>
-				<!-- Mag dit divje om tekst te manipuleren? Source: tinyurl.com/bdhuerw2 -->
-				<p><a href="#" onclick="document.body.style.fontSize='x-small';">Ik wil kleine tekst</a></p>
-				<p><a href="#" onclick="document.body.style.fontSize='medium';">Ik wil medium tekst</a></p>
-				<p><a href="#" onclick="document.body.style.fontSize='x-large';">Ik wil grote tekst</a></p>
+				<!-- Source: tinyurl.com/bdhuerw2 --> 
+				<button onclick="document.body.style.fontSize='x-small';">Ik wil kleine tekst</button>  
+				<button onclick="document.body.style.fontSize='medium';">Ik wil medium tekst </button>
+				<button onclick="document.body.style.fontSize='x-large';">Ik wil grote tekst</button>
 
 				<p> Of je nu thuis geniet van een momentje voor jezelf of samen met gasten een nieuwe zak koffiebonen
 				opentrekt het is altijd een ervaring, een explosie van aroma en een gevoel van thuiskomen.
