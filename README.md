@@ -129,6 +129,12 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
  - Ik moet mij meer bezig houden met uitwerken van de juiste flexbox methodiek. Nu ben ik nog veel met margins en paddings aan het experimenteren, terwij dit veel beter met Grid of Flexbox kan. 
  - Ook moet ik nu aan de slag met CSS. Ik denk dat ik hier veel hulp bij nodig ga hebben.
 
+<img src="readme-images/voortgang2.png" width="375px" alt="breakdown van een dynamisch deel">
+
+<img src="readme-images/voortgang3.png" width="375px" alt="breakdown van een dynamisch deel">
+
+
+
 </details>
 
 
@@ -159,6 +165,11 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
 
 - Ik merk dat ik het maken van het menu erg lastig vind. Dit komt niet per se door de javascript, maar meer door het implementeren van de juiste CSS. Ook wanneer ik de oefeningen volg merk ik dat ik het nog steeds niet goed snap. Ik wil daarom in de aankomende lessen wat meer hulp vragen om het menu te fixen. Ook wil ik meer aan de slag met de styling en hoe ik dat beter en efficienter kan toepassen. 
 
+Tussenstand: 
+
+<img src="readme-images/voortgang1.png" width="375px" alt="breakdown van een dynamisch deel">
+
+
 </details>
 
 
@@ -171,13 +182,9 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Bij deze toegankelijkheidstest heb ik voornamelijk gelet op hoe mijn website functioneert op keyboard en visueel gebied. Ook heb ik mijn reduce motion feature getest. Het was gaaf om te zien dat ik ten opzichte van de huidige website van Starbucks die van mij wat toegankelijker heb kunnen maken. De rest van de bevindingen heb ik hieronder zo goed mogelijk beschreven. 
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
 
   #### Muis en Toetsenbord 
    In dit onderdeel heb ik getest hoe navigeerbaar mijn website is met enkel het toetsenbord 
@@ -193,8 +200,9 @@ Central Field Loss - Voornamelijk het Logo (de Hero image) en de afbeeldingen wo
   De elastiekjes waren veel minder intensief. Het voelde meer aan als een verdikte vinger die ik net had gestoten dan dat ik echt gehinderd werd. Ik kon alles aanklikken, al werd het wel minder goed klikbaar naarmate de buttons steeds kleiner werden. 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Met deze brillen heb ik getest hoe mijn website zichtbaar is met verschillende brillen op. (met indien nodig afbeeldingen)
+  Met deze brillen heb ik getest hoe mijn website zichtbaar is met verschillende brillen op. 
 
+<img src="readme-images/bril1.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 Blur/Glare: Met deze bril kan ik de titels op de landings niet lezen. Ook de zwarte tekst op de webpagina kan ik niet lezen. Idem dito met de zwarte titels. De plaatjes kan ik gelukkig wel zin. De buttons kan ik ook niet lezen. De buttons onderaan de footer kan ik wel lezen gelukkig. 
 
@@ -202,13 +210,15 @@ Peripheral Field Loss: Met deze bril is het lastig om te zien wat de afbeeldinge
 
 Combined Loss Diabetic Eye Disease: Door de grote vlokken op het scherm is het lastig om te zien wat er zich op het scherm afspeelt. Het zorgt ervoor dat je afgeleid raakt of je hoofd moet bewegen om het vanuit een bepaalde hoek wel te kunnen zien. Ik denk dat ik weinig kan doen om deze ervaring beter te maken.
 
+<img src="readme-images/bril2.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
 Stip in het midden bril: De grote stip in het midden maakt het heel lastig om de content te bekijken. Content wat zich wat meer aan de zijkant afspeelt is redelijk goed te doen, maar focussen op tekst in het midden is erg lastig. 
 
 Low Contrast: Het lage contrast zorgt ervoor dat ik de tekst en afbeeldigen slecht kan zien/lezen. 
 
 Central field Loss : Ik kan hiermee slecht lezen wat voor tekst er wordt weergegeven. De afbeeldingen worden ook vaag, maar wanneer je schuin kijkt kan je het wel beter zien. Ik kan een optie bieden in mijn website om het beter toegankelijk te maken. 
 
-Hemifield Loss: 
+Hemifield Loss: Bij deze bril vond ik het lastig om te bepalen wat ik precies kon verbeteren voor gebruikers met deze aandoening. De website is opzich goed zichtbaar, alleen de linkerkant is lastig te navigeren. Ik zou een extra optie kunnen inbouwen om ervoor te zorgen dat de content naar links schuift.
 
 
 
@@ -257,19 +267,19 @@ Hemifield Loss:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/home.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Tijdens dit vak heb ik goed geleerd hoe belangrijk het is om hulp te vragen, gerichter te zoeken en om verbanden te leggen. Aan het begin van dit vak had ik heel erg de twijfel of ik het dit keer wel zou halen, maar na het begrijpen van de stof ging ik al vrij snel als een trein. De voortgangs gesprekken zorgde ervoor dat ik veel met andere klasgenoten kon sparren en leren. Ik was blij dat ik steeds meer leerde en verbanden kon leggen, waardoor ik ideetjes vrij snel kon uitbouwen naar echte functies, dat gaf een kick. Ik ben echt ontzettend tevreden met het eindresultaat, het lijkt enorm op de echte website. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/home2.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Zoals ik al aangaf hierboven had ik veel moeite met het starten van dit vak. De eerdere pogingen liepen meestal uit op niks, dit kwam voornamelijk omdat ik de stof simpelweg niet begreep of niet op tijd oefeningen afkreeg. Dit ging bij deze poging een stuk beter. Dit kwam ook op omdat ik deze poging vaker en eerder om hulp vroeg. Ik heb wel een aantal keer gehad dat ik uren aan het klieren was met 1 stukje code. Dat kwam voornamelijk omdat ik het zelfe wilde uitvogelen. Ik zag dan echter wel vrij snel in dat ik hulp nodig had, deze riep ik dan ook in bij de eerstvolgende les. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/smaken1.png" width="375px" alt="bummer">
 </details>
 
 
@@ -281,10 +291,13 @@ Hemifield Loss:
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
+  
 
-  1. bron 1
-  2. bron 2
-  3. ...
-
+  1. Emilio - CSS Animations
+  2. https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ <-- Voor extra hulp bij de dark mode settings.
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion <-- Voor het reduced motion aspect werkende krijgen. 
+  4. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ <-- Voor het werken aan Flexbox in mijn CSS bestanden. 
+  5. https://www.youtube.com/watch?v=hmMvkLqsy-Y <-- Technical Tips, voor het uitproberen van verschillende CSS buttons.
+  6. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video <-- Voor het implementeren van een video in mijn CSS.
+	
 </details>

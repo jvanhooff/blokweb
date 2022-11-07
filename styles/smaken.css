@@ -115,7 +115,7 @@ text-decoration: none;
 header nav {
 	position:fixed;
 	inset:0;
-	background-color: white;
+	background-color: var(--color-background);
 
 	z-index:100;
 
@@ -171,7 +171,7 @@ font-weight: 500;
 margin-top: 1em;
 color: var(--color-starbucks-brand-groen);
  padding: 5px 10px;
- background: white;
+ background: var(--color-background);
  font-size: 1em;
 cursor: pointer;
 }
@@ -200,7 +200,7 @@ main section div h2 {
 	padding: -2em;
 	margin-left: -0.7em;
 	margin-bottom: -0.2em;
-	color: white;
+	color: var(--color-background);
 	font-family: 'sodosans';	
 }
 
@@ -234,8 +234,8 @@ main img:nth-last-of-type(1) {
 
 main section:nth-of-type(1) button {
 	border-radius: 1em;
-    border: 1px solid white;
-	color: white;
+    border: 1px solid var(--color-background);
+	color: var(--color-background);
     padding: 5px 10px;
     background: transparent;
     font-size: 1em;
@@ -245,21 +245,21 @@ main section:nth-of-type(1) button {
 
 main button {
 	border-radius: 1em;
-    border: 1px solid #44996A;
+    border: 1px solid var(--color-starbucks-brand-groen);
     padding: 5px 10px;
-    background: white;
+    background: var(--color-background);
     font-size: 1em;
     cursor: pointer;
 }
 
 main a {
 	border-radius: 10em;
-    border: 1px solid #44996A;
+    border: 1px solid var(--color-starbucks-brand-groen);
 	font-family: "SoDoSans", sans-serif;
 	font-weight: 500;
 	color: var(--color-starbucks-brand-groen);
     padding: 5px 10px;
-    background: white;
+    background: var(--color-background);
     font-size: 1em;
     cursor: pointer;
 }
@@ -324,10 +324,14 @@ summary {
 	/* startje */
 	--color-text: #111;
 	--color-background: #fff;
-	--color-starbucks-brand-groen: #44996A;
+    --color-starbucks-brand-groen: #44996A; 
+	--color-hover-state: #130f40; 
+	--color-active-state: #575fcf;
+	--color-visited-state: #9b59b6; 
+	--color-focus-state: #e74c3c; 
 }
 
-/* Dark mode */
+/* Dark mode, bron: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/ */
 
 /* @media (prefers-color-scheme:dark) {
 	:root {
@@ -339,7 +343,7 @@ summary {
 	}
 }  */
 
-/* Surface plane punt 1; het reducen van motion wanneer de gebruiker dat aangeeft.  */
+/* Surface plane punt 1; het reducen van motion wanneer de gebruiker dat aangeeft. Bron:  https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion  */
 
 @media (prefers-reduced-motion: reduce) {
 	main section:nth-of-type(1) div button:hover {
@@ -354,28 +358,71 @@ summary {
 /* jouw code */
 
 
-
 /* Alle STATES van buttons, knoppen e.d */
 
-/* a:visited {
-	color: red;
-}  */
-
-a:active {
-color: purple;
-}
-
-a:focus {
-color: black;
-} 
-
-a:hover{
-color: black;	
-}
-
-/* a:visited{
-color: purple;	
-} */
+a:hover {
+	color: var(--color-hover-state)
+	}
+	
+	a:visited {
+		color: var(--color-visited-state);
+	}
+	
+	a:active {
+		color: var(--color-active-state);
+	}
+	
+	a:focus {
+		color: var(--color-focus-state);
+	}
+	
+	button:hover { 
+	color:var(--color-hover-state);
+	}
+	
+	button:visited {
+		color: var(--color-visited-state);
+	}
+	
+	button:active {
+		color: var(--color-active-state);
+	}
+	
+	button:focus {
+		color: var(--color-focus-state);
+	}
+	
+	img:hover{
+	color: var(--color-hover-state);
+	}
+	
+	img:active {
+		color: var(--color-active-state);
+	}
+	
+	img:focus {
+		color: var(--color-focus-state);
+	}
+	
+	img:visited {
+		color: var(--color-visited-state);
+	}
+	
+	div:hover {
+	color: var(--color-hover-state);	
+	}
+	
+	div:active {
+		color:var(--color-active-state);
+	}
+	
+	div:focus {
+		color: var(--color-focus-state);
+	}
+	
+	div:visited {
+		color: var(--color-visited-state);
+	}
 
 
 
@@ -462,8 +509,8 @@ main section:nth-of-type(3) p a {
 
 main section:nth-of-type(1) button {
 	border-radius: 1em;
-	border: 1px solid white;
-	color: white;
+	border: 1px solid var(--color-background);
+	color: var(--color-background);
 	padding: 5px 10px;
 	background: transparent;
 	font-size: 1em;
@@ -472,9 +519,9 @@ main section:nth-of-type(1) button {
 
 main button {
 	border-radius: 1em;
-	border: 1px solid #44996A;
+	border: 1px solid var(--color-starbucks-brand-groen);
 	padding: 5px 10px;
-	background: white;
+	background: var(--color-background);
 	font-size: 1em;
 	cursor: pointer;
 }
@@ -486,7 +533,7 @@ main a {
 	font-weight: 500;
 	color: var(--color-starbucks-brand-groen);
 	padding: 5px 10px;
-	background: white;
+	background: var(--color-background);
 	font-size: 0.9em;
 	cursor: pointer;
 	text-decoration: none;
@@ -727,7 +774,7 @@ footer section:nth-of-type(3) ul.open {
 
 
 
-
+/* Bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video */
 
 footer video { 
 	width: 100%;
